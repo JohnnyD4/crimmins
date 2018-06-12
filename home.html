@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel='stylesheet' href='./style.css'>
+		<title>Expert Services</title>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			<div class='banner'>
+				<div class='bg'></div>
+				<div class='menu' onclick='console.log("click");'>|||</div>
+			</div>
+			<div class='header'>
+				<div class='images'>
+					<div class='imgSlide'>
+						<img src='http://expertsurfaces.net/gallery/Tile-and-grout-before-3a.png'/>
+						<img src='http://expertsurfaces.net/gallery/Tile-and-grout-after-3a.png'/>
+					</div>
+					<div class='imgSlide'>
+						<img src='http://expertsurfaces.net/gallery/Marble-Before3.jpg'/>
+						<img src='http://expertsurfaces.net/gallery/Marble-After-2.jpg'/>
+					</div>
+					<div class='imgSlide'>
+						<img src='http://expertsurfaces.net/gallery/Terrazzo-before-4.png'/>
+						<img src='http://expertsurfaces.net/gallery/Terrazzo-after-4a.png'/>
+					</div>
+					<div class='imgSlide'>
+						<img class='terrazzo' src='http://expertsurfaces.net/gallery/Before-A.3.jpg'/>
+						<img class='terrazzo' src='http://expertsurfaces.net/gallery/paver-after-1.jpg'/>
+						</div>
+				</div>
+				<div class='titles'>
+
+					</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		let index = 0;
+		scroll();
+
+		function scroll() {
+			const image = document.getElementsByClassName('imgSlide');
+
+			for (let i = 0; i < image.length; i += 1) {
+				image[i].style.display = 'none';
+			}
+			index++;
+			if (index > image.length) {
+				index = 1;
+			}
+			image[index - 1].style.display = 'block';
+			setTimeout(scroll, 4000);
+		}
+
+
+		
+	</script>
+</html>

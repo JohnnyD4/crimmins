@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url('http://www.crafthousebrews.com/wp-content/uploads/2015/02/wide_brick_tile_dark_6.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    transition: 0.70s;
+    transform: rotate(90deg);
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    color: white;
+    position: fixed;
+    top: 10;
+    right: 20;
+    font-size: 30px;
+}
+
+.menu:hover {
+    cursor: pointer;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    transform: rotate(180deg);
+}
+
+.imgSlide {
+    width: 30%;
+    display: none;
+    /* border: 2px solid black; */
+}
+img {
+    width: 100%;
+}
